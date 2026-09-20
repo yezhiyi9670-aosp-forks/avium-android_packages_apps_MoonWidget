@@ -92,7 +92,7 @@ class CharacterConfigActivity : AppCompatActivity() {
         }
 
         setContent {
-            MaterialTheme {
+            MoonWidgetTheme {
                 WidgetConfigScreen(
                     hairColorOptions = hairColors,
                     bowColorOptions = bowColors,

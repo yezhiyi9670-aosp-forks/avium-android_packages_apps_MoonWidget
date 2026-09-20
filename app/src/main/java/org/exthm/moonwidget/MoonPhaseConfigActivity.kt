@@ -55,7 +55,7 @@ class MoonPhaseConfigActivity : AppCompatActivity() {
         val initialShowDetails = WidgetPrefs.forWidget(this, appWidgetId)
             .getBoolean("moon_show_details", true)
         setContent {
-            MaterialTheme {
+            MoonWidgetTheme {
                 MoonPhaseConfigScreen(initialShowDetails) { showDetails ->
                     MoonPhaseWidgetProvider.savePrefs(this, appWidgetId, showDetails)
                     MoonPhaseWidgetProvider.updateAppWidget(

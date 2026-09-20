@@ -60,7 +60,7 @@ class CountdownConfigActivity : AppCompatActivity() {
         val initialTitle = CountdownWidgetProvider.loadTitle(this, appWidgetId)
         val initialDate = CountdownWidgetProvider.loadTargetDate(this, appWidgetId)
         setContent {
-            MaterialTheme {
+            MoonWidgetTheme {
                 CountdownConfigScreen(initialTitle, initialDate) { title, targetDate ->
                     CountdownWidgetProvider.savePrefs(this, appWidgetId, title, targetDate)
                     CountdownWidgetProvider.updateAppWidget(
